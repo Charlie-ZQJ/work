@@ -1,0 +1,38 @@
+当前用户: charlie
+
+系统时间:
+Tue Apr  1 17:26:37 CST 2025
+
+CPU负载:
+ 17:26:37 up 36 min,  1 user,  load average: 0.01, 0.01, 0.00
+
+磁盘使用:
+Filesystem      Size  Used Avail Use% Mounted on
+none            7.8G     0  7.8G   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none            7.8G  4.0K  7.8G   1% /mnt/wsl
+drivers         195G  144G   52G  74% /usr/lib/wsl/drivers
+/dev/sdc       1007G   24G  933G   3% /
+none            7.8G   88K  7.8G   1% /mnt/wslg
+none            7.8G     0  7.8G   0% /usr/lib/wsl/lib
+rootfs          7.8G  2.4M  7.8G   1% /init
+none            7.8G     0  7.8G   0% /dev
+none            7.8G  828K  7.8G   1% /run
+none            7.8G     0  7.8G   0% /run/lock
+none            7.8G     0  7.8G   0% /run/shm
+tmpfs           7.8G     0  7.8G   0% /sys/fs/cgroup
+none            7.8G   76K  7.8G   1% /mnt/wslg/versions.txt
+none            7.8G   76K  7.8G   1% /mnt/wslg/doc
+C:\             195G  144G   52G  74% /mnt/c
+D:\             196G  118G   78G  61% /mnt/d
+E:\             564G  199G  365G  36% /mnt/e
+snapfuse         64M   64M     0 100% /snap/core20/2496
+snapfuse         64M   64M     0 100% /snap/core20/1891
+snapfuse         92M   92M     0 100% /snap/lxd/24061
+snapfuse         92M   92M     0 100% /snap/lxd/32662
+snapfuse         54M   54M     0 100% /snap/snapd/19122
+snapfuse         45M   45M     0 100% /snap/snapd/23771
+
+内存使用:
+              total        used        free      shared  buff/cache   available
+Mem:          15817         522       15122           3         171       15047
+Swap:          4096           0        4096
