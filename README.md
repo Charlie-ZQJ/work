@@ -1,6 +1,6 @@
 # 钟泉江 324080203115 24机械1班 github：https://github.com/Charlie-ZQJ/work
 ## 1、work.py：3个计算功能的代码
-'''python
+```python
 def factorial(n):
 #计算非负整数的阶乘
     if n < 0:
@@ -68,11 +68,11 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
-'''
+```
 
 
 ## 2、系统信息收集
-'''bash
+```bash
 #!/bin/bash
 {
     echo "当前用户: $(whoami)"
@@ -85,29 +85,29 @@ if __name__ == "__main__":
     echo -e "\n内存使用:" 
     free -m
 } > system_report.txt
-'''
+```
 
 ### 功能描述
 编写了一个名为sys_info.sh的Bash脚本，用于收集并保存系统信息。脚本执行后会显示并保存以下信息到system_report.txt文件中。
 ### 使用方法
 1、保存脚本sys_info.sh文件
 2、赋予执行权限，在终端中运行以下命令为脚本文件添加执行权限：
-'''bash
+```bash
 chmod +x sys_info.sh
-'''
+```
 3、执行脚本：
-'''bash
+```bash
 ./sys_info.sh
-'''
+```
 执行完成后，脚本会在当前目录下生成一个system_report.txt文件，其中包含了当前用户、时间、CPU 负载、磁盘使用情况、内存使用情况等信息。
 4、查看输出：
-'''bash
+```bash
 cat system_report.txt
-'''
+```
 
 
 ## 3、批量创建用户
-'''bash
+```bash
 #!/bin/bash
 while IFS= read -r username
 do
@@ -122,7 +122,7 @@ do
         fi
     fi
 done < user_list.txt
-'''
+```
 
 ### 功能描述
 该脚本用于批量创建用户。
@@ -133,11 +133,11 @@ done < user_list.txt
 1、保存脚本create_users.sh文件
 2、创建一个名为 user_list.txt`的文件，按行列出需要创建的用户名
 3、为脚本添加执行权限：
-'''bash
+```bash
 chmod +x create_users.sh
-'''
+```
 4、执行脚本:
-'''bash
+```bash
 ./create_users.sh
-'''
+```
 
