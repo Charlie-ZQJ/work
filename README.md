@@ -1,7 +1,6 @@
 # 钟泉江 324080203115 24机械1班 github：https://github.com/Charlie-ZQJ/work
 ## 1、work.py：3个计算功能的代码
-python
-'''
+'''python
 def factorial(n):
 #计算非负整数的阶乘
     if n < 0:
@@ -73,7 +72,8 @@ if __name__ == "__main__":
 
 
 ## 2、系统信息收集
-'''
+'''bash
+#!/bin/bash
 {
     echo "当前用户: $(whoami)"
     echo -e "\n系统时间:" 
@@ -92,22 +92,23 @@ if __name__ == "__main__":
 ### 使用方法
 1、保存脚本sys_info.sh文件
 2、赋予执行权限，在终端中运行以下命令为脚本文件添加执行权限：
-'''
+'''bash
 chmod +x sys_info.sh
 '''
 3、执行脚本：
-'''
+'''bash
 ./sys_info.sh
 '''
 执行完成后，脚本会在当前目录下生成一个system_report.txt文件，其中包含了当前用户、时间、CPU 负载、磁盘使用情况、内存使用情况等信息。
 4、查看输出：
-'''
+'''bash
 cat system_report.txt
 '''
 
 
 ## 3、批量创建用户
-'''
+'''bash
+#!/bin/bash
 while IFS= read -r username
 do
     if id "$username" &>/dev/null; then
@@ -130,13 +131,13 @@ done < user_list.txt
 如果用户不存在，则使用useradd命令创建该用户，并输出创建成功或失败的提示。
 ### 使用方法
 1、保存脚本create_users.sh文件
-2、创建一个名为 `user_list.txt` 的文件，按行列出需要创建的用户名
+2、创建一个名为 user_list.txt`的文件，按行列出需要创建的用户名
 3、为脚本添加执行权限：
-'''
+'''bash
 chmod +x create_users.sh
 '''
 4、执行脚本:
-'''
+'''bash
 ./create_users.sh
 '''
 
